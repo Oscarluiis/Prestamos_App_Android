@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bgera.cuotaprestamos.InformationActivity">
+
+    <TextView
+        android:text="Monto de Pretamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/txtMonto"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/txtCuotaMensual"
+        android:layout_toRightOf="@+id/txtCuotaMensual" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txtContAños"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <TextView
+        android:text="Cantidad de Años"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/txtMonto"
+        android:layout_toLeftOf="@+id/txtMonto"
+        android:layout_toStartOf="@+id/txtMonto"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFinPago"
+        android:layout_alignBaseline="@+id/txtContAños"
+        android:layout_alignBottom="@+id/txtContAños"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16" />
+
+    <TextView
+        android:text="Fin de Pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/txtMonto"
+        android:layout_toEndOf="@+id/txtMonto"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/txtMonto" />
+
+    <TextView
+        android:text="Tipo de Prestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/txtContAños"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/txtTipoPrestamo"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/txtContAños"
+        android:layout_alignStart="@+id/txtContAños" />
+
+    <TextView
+        android:text="Monto Ajustado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/txtMonto"
+        android:layout_toEndOf="@+id/txtMonto"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMontoAjustado"
+        android:layout_alignBaseline="@+id/txtTipoPrestamo"
+        android:layout_alignBottom="@+id/txtTipoPrestamo"
+        android:layout_toRightOf="@+id/txtFinPago"
+        android:layout_toEndOf="@+id/txtFinPago" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtMontoIntereses"
+        android:layout_below="@+id/textView12"
+        android:layout_toRightOf="@+id/txtTipoPrestamo"
+        android:layout_toEndOf="@+id/txtTipoPrestamo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMontoTotal"
+        android:layout_alignBaseline="@+id/txtMontoIntereses"
+        android:layout_alignBottom="@+id/txtMontoIntereses"
+        android:layout_toLeftOf="@+id/txtMontoAjustado"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:text="Monto Intereses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/txtTipoPrestamo"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/txtCuotaMensual" />
+
+    <TextView
+        android:text="Cuota Mensual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/txtMontoTotal"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:text="COTIZAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCotizar"
+        android:layout_below="@+id/txtCuotaMensual"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_marginTop="30dp"
+        android:onClick="cotizar"/>
+
+    <TextView
+        android:text="Monto Total a Cobrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textColor="@android:color/background_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+</RelativeLayout>
